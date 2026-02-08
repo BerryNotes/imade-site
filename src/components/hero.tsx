@@ -1,0 +1,122 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export function Hero() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Gradient orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute -top-1/4 -left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.07]"
+          style={{
+            background:
+              "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)",
+          }}
+        />
+        <div
+          className="absolute -bottom-1/4 -right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.05]"
+          style={{
+            background:
+              "radial-gradient(circle, var(--color-gold) 0%, transparent 70%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 rounded-full border border-border-light"
+          style={{ background: "rgba(129, 140, 248, 0.06)" }}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+          <span className="text-xs font-medium text-text-muted tracking-wide">
+            For music producers
+          </span>
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="font-display text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-6"
+        >
+          Know which songs
+          <br />
+          <span className="text-accent">are your best.</span>
+        </motion.h1>
+
+        {/* Subheadline */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="text-lg text-text-muted max-w-lg mx-auto mb-10 leading-relaxed"
+        >
+          Compare your tracks head-to-head. iMade uses Elo ratings and bracket
+          tournaments to build an honest ranking of your music.
+        </motion.p>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="flex items-center justify-center gap-4"
+        >
+          <a
+            href="#cta"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+            style={{
+              background: "linear-gradient(135deg, #4338ca, #6366f1)",
+              boxShadow: "0 0 32px rgba(99, 102, 241, 0.2)",
+            }}
+          >
+            Try iMade
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="opacity-70"
+            >
+              <path
+                d="M3.5 8h9M8.5 4l4 4-4 4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+          <a
+            href="#how-it-works"
+            className="px-7 py-3.5 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"
+          >
+            How it works
+          </a>
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="absolute bottom-12 left-1/2 -translate-x-1/2"
+        >
+          <motion.div
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-5 h-8 rounded-full border border-border-light flex items-start justify-center p-1"
+          >
+            <div className="w-1 h-1.5 rounded-full bg-text-dim" />
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
