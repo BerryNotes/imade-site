@@ -25,7 +25,7 @@ export function CTA() {
 
         <Reveal delay={0.1}>
           <p className="text-text-muted mb-10 max-w-md mx-auto leading-relaxed">
-            iMade is free, open source, and runs entirely on your machine.
+            iMade is free and runs entirely on your machine.
             Your unreleased music never leaves your computer.
           </p>
         </Reveal>
@@ -33,7 +33,7 @@ export function CTA() {
         <Reveal delay={0.2}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <a
-              href="https://github.com/BerryNotes/my-songs-app/releases/latest"
+              href="https://github.com/BerryNotes/imade-releases/releases/latest"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: "linear-gradient(135deg, #4338ca, #6366f1)",
@@ -58,7 +58,7 @@ export function CTA() {
               </svg>
             </a>
             <a
-              href="https://github.com/BerryNotes/my-songs-app"
+              href="https://github.com/BerryNotes/imade-releases"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"
             >
               <svg
