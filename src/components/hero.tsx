@@ -34,7 +34,7 @@ export function Hero() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
           <span className="text-xs font-medium text-text-muted tracking-wide">
-            For music producers
+            A creative development tool for producers
           </span>
         </motion.div>
 
@@ -45,9 +45,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-6"
         >
-          Know which songs
+          See your growth.
           <br />
-          <span className="text-accent">are your best.</span>
+          <span className="text-accent">Find your strongest work.</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -57,8 +57,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg text-text-muted max-w-lg mx-auto mb-10 leading-relaxed"
         >
-          Compare your tracks head-to-head. iMade uses Elo ratings and bracket
-          tournaments to build an honest ranking of your music.
+          Stop guessing which beats hit hardest. iMade replaces gut feeling with
+          a structured comparison system that reveals your real strengths and
+          tracks how you&apos;re improving over time.
         </motion.p>
 
         {/* CTA */}

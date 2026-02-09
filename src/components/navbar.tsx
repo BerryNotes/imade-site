@@ -34,7 +34,7 @@ export function Navbar() {
             href="#cta"
             className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200"
           >
-            Get Started
+            Download
           </a>
         </div>
       </div>

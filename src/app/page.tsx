@@ -4,18 +4,19 @@ import { Screenshots } from "@/components/screenshots";
 import { HowItWorks } from "@/components/how-it-works";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
-
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Screenshots />
-        <HowItWorks />
-        <CTA />
-      </main>
-      <Footer />
+      <div className="relative" style={{ zIndex: 2 }}>
+        <Navbar />
+        <main>
+          <Hero />
+          <Screenshots />
+          <HowItWorks />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

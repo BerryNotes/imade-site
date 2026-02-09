@@ -6,17 +6,20 @@ import Image from "next/image";
 const screenshots = [
   {
     label: "Rankings",
-    desc: "Elo-rated leaderboard of all your songs, drag to reorder.",
+    subtitle: "Know where every song stands",
+    desc: "Your entire catalog, objectively ranked by Elo rating. See scores, win/loss records, and genre breakdowns at a glance. Drag to reorder when you disagree — the system learns from you.",
     file: "screenshot-rankings.png",
   },
   {
     label: "Battle",
-    desc: "Head-to-head comparisons with guided sessions and brackets.",
+    subtitle: "Replace gut feeling with real decisions",
+    desc: "Pick between two songs at a time. Guided sessions mix classic head-to-head comparisons with bracket tournaments so every matchup is meaningful and fair.",
     file: "screenshot-battle.png",
   },
   {
     label: "Stats",
-    desc: "Track improvement, listening time, and genre breakdowns.",
+    subtitle: "See your trajectory over time",
+    desc: "Every dot is a song, plotted by creation date and Elo rating. Spot trends across genres, identify your strengths, and track whether your music is actually improving.",
     file: "screenshot-stats.png",
   },
 ];
@@ -26,41 +29,45 @@ export function Screenshots() {
     <section id="screenshots" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <Reveal>
-          <div className="text-center mb-20">
+          <div className="text-center mb-24">
             <p className="text-xs font-medium text-accent tracking-widest uppercase mb-3">
               See it in action
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
-              Built for producers
+              Your creative feedback loop
             </h2>
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="space-y-32">
           {screenshots.map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.1}>
-              <div className="group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
-                {/* Screenshot placeholder — replace src with your images */}
-                <div className="relative aspect-[9/16] bg-bg-raised overflow-hidden">
+            <Reveal key={s.label} delay={0.1}>
+              <div
+                className={`flex flex-col ${
+                  i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-center gap-12 md:gap-16`}
+              >
+                {/* Screenshot */}
+                <div className="w-full md:w-3/5 group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
                   <Image
-                    src={`/screenshots/${s.file}`}
+                    src={`/screenshots/${s.file}?v=7`}
                     alt={`${s.label} screenshot`}
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    width={1280}
+                    height={800}
+                    unoptimized
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                   />
-                  {/* Fallback overlay when image is missing */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-bg-raised">
-                    <span className="text-text-dim text-sm">
-                      {s.file}
-                    </span>
-                  </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display font-medium text-sm text-text mb-1">
+
+                {/* Description */}
+                <div className="w-full md:w-2/5">
+                  <span className="text-xs font-medium text-accent tracking-widest uppercase">
                     {s.label}
+                  </span>
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold tracking-tight mt-2 mb-4">
+                    {s.subtitle}
                   </h3>
-                  <p className="text-xs text-text-muted leading-relaxed">
+                  <p className="text-text-muted leading-relaxed">
                     {s.desc}
                   </p>
                 </div>

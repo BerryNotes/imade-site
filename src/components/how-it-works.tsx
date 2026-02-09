@@ -5,8 +5,8 @@ import { Reveal } from "./reveal";
 const steps = [
   {
     num: "01",
-    title: "Upload your tracks",
-    desc: "Drop your audio files into the library. iMade organizes them with genres, dates, and metadata — your full catalog in one place.",
+    title: "Build your catalog",
+    desc: "Drop your beats and tracks into iMade. It organizes everything by genre, date, and metadata — turning scattered files into a structured catalog you can actually evaluate.",
     icon: (
       <svg
         width="24"
@@ -26,8 +26,8 @@ const steps = [
   },
   {
     num: "02",
-    title: "Compare head-to-head",
-    desc: "Listen to two songs and pick the better one. Guided sessions mix classic comparisons with bracket tournaments to keep things fresh.",
+    title: "Make honest decisions",
+    desc: "Pick between two songs at a time — no overthinking, no mood bias. Guided sessions and bracket tournaments structure the process so every comparison counts.",
     icon: (
       <svg
         width="24"
@@ -45,8 +45,8 @@ const steps = [
   },
   {
     num: "03",
-    title: "See your true rankings",
-    desc: "Elo ratings surface your strongest work. Track how songs climb or fall over time, spot stale rankings, and export playlists.",
+    title: "Understand your trajectory",
+    desc: "Elo ratings reveal which genres you excel at, whether your music is improving, and where to double down. Make intentional choices about what to release, pitch, or sharpen.",
     icon: (
       <svg
         width="24"
@@ -76,10 +76,10 @@ export function HowItWorks() {
         <Reveal>
           <div className="text-center mb-20">
             <p className="text-xs font-medium text-accent tracking-widest uppercase mb-3">
-              Simple workflow
+              How it works
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
-              Three steps to clarity
+              From scattered files to real self-awareness
             </h2>
           </div>
         </Reveal>
