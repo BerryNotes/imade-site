@@ -5,7 +5,7 @@ import { BackgroundEffects } from "@/components/background-effects";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://imade-site-git-master-berrynotes-projects.vercel.app"
+    "https://imade-site.vercel.app"
   ),
   title: "iMade — Know Your Strongest Work",
   description:
