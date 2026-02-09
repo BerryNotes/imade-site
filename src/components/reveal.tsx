@@ -1,5 +1,6 @@
 "use client";
 
+import { useReducedMotion } from "framer-motion";
 import { motion, type Variants } from "framer-motion";
 import type { ReactNode, CSSProperties } from "react";
 
@@ -16,6 +17,11 @@ const fadeIn: Variants = {
 const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: { opacity: 1, scale: 1 },
+};
+
+const noMotion: Variants = {
+  hidden: { opacity: 1 },
+  visible: { opacity: 1 },
 };
 
 const variants: Record<string, Variants> = { fadeUp, fadeIn, scaleIn };
@@ -37,13 +43,15 @@ export function Reveal({
   className,
   style,
 }: RevealProps) {
+  const reduced = useReducedMotion();
+
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
-      variants={variants[variant]}
-      transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
+      variants={reduced ? noMotion : variants[variant]}
+      transition={{ duration: reduced ? 0 : duration, delay: reduced ? 0 : delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
       style={style}
     >

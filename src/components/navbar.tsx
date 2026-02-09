@@ -30,6 +30,12 @@ export function Navbar() {
             Screenshots
           </a>
           <a
+            href="#features"
+            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+          >
+            Features
+          </a>
+          <a
             href="#how-it-works"
             className="text-sm text-text-muted hover:text-text transition-colors duration-200"
           >
@@ -85,6 +91,13 @@ export function Navbar() {
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 Screenshots
+              </a>
+              <a
+                href="#features"
+                onClick={() => setMenuOpen(false)}
+                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+              >
+                Features
               </a>
               <a
                 href="#how-it-works"
