@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div
           className="absolute -top-1/4 -left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.07]"
           style={{
@@ -84,6 +84,7 @@ export function Hero() {
               viewBox="0 0 16 16"
               fill="none"
               className="opacity-70"
+              aria-hidden="true"
             >
               <path
                 d="M3.5 8h9M8.5 4l4 4-4 4"
@@ -108,6 +109,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
           className="absolute bottom-12 left-1/2 -translate-x-1/2"
+          aria-hidden="true"
         >
           <motion.div
             animate={{ y: [0, 6, 0] }}

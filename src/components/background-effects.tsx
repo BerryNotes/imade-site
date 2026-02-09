@@ -139,6 +139,7 @@ function AnimatedBackground() {
   return (
     <canvas
       ref={canvasRef}
+      aria-hidden="true"
       style={{
         position: "fixed",
         top: 0,

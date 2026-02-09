@@ -50,11 +50,10 @@ export function Screenshots() {
                 {/* Screenshot */}
                 <div className="w-full md:w-3/5 group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
                   <Image
-                    src={`/screenshots/${s.file}?v=7`}
+                    src={`/screenshots/${s.file}`}
                     alt={`${s.label} screenshot`}
                     width={1280}
                     height={800}
-                    unoptimized
                     className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 </div>
