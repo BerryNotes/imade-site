@@ -4,6 +4,9 @@ import { SmoothScroll } from "@/components/smooth-scroll";
 import { BackgroundEffects } from "@/components/background-effects";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://imade-site-git-master-berrynotes-projects.vercel.app"
+  ),
   title: "iMade — Know Your Strongest Work",
   description:
     "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
@@ -12,6 +15,21 @@ export const metadata: Metadata = {
     description:
       "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 2422,
+        height: 1442,
+        alt: "iMade — Music ranking tool for producers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "iMade — Know Your Strongest Work",
+    description:
+      "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
+    images: ["/og-image.png"],
   },
 };
 
