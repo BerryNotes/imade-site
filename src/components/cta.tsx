@@ -34,7 +34,7 @@ export function CTA() {
         <Reveal delay={0.2}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <a
-              href="https://github.com/BerryNotes/imade-releases/releases/latest/download/iMade.exe"
+              href="https://github.com/BerryNotes/imade-releases/releases/latest/download/iMade.zip"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: "linear-gradient(135deg, #4338ca, #6366f1)",
