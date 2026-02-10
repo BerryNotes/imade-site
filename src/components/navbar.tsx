@@ -48,10 +48,10 @@ export function Navbar() {
             Changelog
           </a>
           <a
-            href="#cta"
+            href="/pricing"
             className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200"
           >
-            Download
+            Pricing
           </a>
         </div>
 
@@ -120,11 +120,11 @@ export function Navbar() {
                 Changelog
               </a>
               <a
-                href="#cta"
+                href="/pricing"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200 text-center"
               >
-                Download
+                Pricing
               </a>
             </div>
           </motion.div>

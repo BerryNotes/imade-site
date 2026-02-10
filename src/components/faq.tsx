@@ -14,8 +14,8 @@ const faqs = [
     a: "No. iMade runs entirely on your computer. Your audio files, rankings, and data are stored locally and never sent to any server. There are no accounts, no cloud sync, and no analytics. Your unreleased music stays completely private.",
   },
   {
-    q: "Is it really free?",
-    a: "Yes, completely free with no catches. iMade is open source — you can view the full source code on GitHub. No ads, no subscriptions, no premium tier.",
+    q: "How much does it cost?",
+    a: "iMade offers flexible pricing plans to suit every producer. Check our pricing page for current plans and features included at each tier.",
   },
   {
     q: "What platforms does it support?",

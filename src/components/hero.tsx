@@ -70,14 +70,14 @@ export function Hero() {
           className="flex items-center justify-center gap-4"
         >
           <a
-            href="#cta"
+            href="/pricing"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             style={{
               background: "linear-gradient(135deg, #4338ca, #6366f1)",
               boxShadow: "0 0 32px rgba(99, 102, 241, 0.2)",
             }}
           >
-            Try iMade
+            View Pricing
             <svg
               width="16"
               height="16"

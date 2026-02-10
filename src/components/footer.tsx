@@ -14,20 +14,10 @@ export function Footer() {
 
         <div className="flex items-center gap-5">
           <a
-            href="https://github.com/BerryNotes/imade"
+            href="/pricing"
             className="text-xs text-text-dim hover:text-text-muted transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Source
-          </a>
-          <a
-            href="https://github.com/BerryNotes/imade-releases"
-            className="text-xs text-text-dim hover:text-text-muted transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Releases
+            Pricing
           </a>
           <a
             href="/changelog"
