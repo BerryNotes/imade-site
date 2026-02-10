@@ -42,6 +42,12 @@ export function Navbar() {
             How It Works
           </a>
           <a
+            href="/changelog"
+            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+          >
+            Changelog
+          </a>
+          <a
             href="#cta"
             className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200"
           >
@@ -105,6 +111,13 @@ export function Navbar() {
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 How It Works
+              </a>
+              <a
+                href="/changelog"
+                onClick={() => setMenuOpen(false)}
+                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+              >
+                Changelog
               </a>
               <a
                 href="#cta"

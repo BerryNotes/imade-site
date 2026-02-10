@@ -29,7 +29,13 @@ export function Footer() {
           >
             Releases
           </a>
-          <span className="text-xs text-text-dim">v2.3.3</span>
+          <a
+            href="/changelog"
+            className="text-xs text-text-dim hover:text-text-muted transition-colors"
+          >
+            Changelog
+          </a>
+          <span className="text-xs text-text-dim">v2.4.0</span>
         </div>
       </div>
     </footer>
