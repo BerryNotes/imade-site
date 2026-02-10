@@ -24,22 +24,10 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#screenshots"
-            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
-          >
-            Screenshots
-          </a>
-          <a
             href="#features"
             className="text-sm text-text-muted hover:text-text transition-colors duration-200"
           >
             Features
-          </a>
-          <a
-            href="#how-it-works"
-            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
-          >
-            How It Works
           </a>
           <a
             href="/changelog"
@@ -92,25 +80,11 @@ export function Navbar() {
           >
             <div className="flex flex-col px-6 py-4 gap-4">
               <a
-                href="#screenshots"
-                onClick={() => setMenuOpen(false)}
-                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
-              >
-                Screenshots
-              </a>
-              <a
                 href="#features"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 Features
-              </a>
-              <a
-                href="#how-it-works"
-                onClick={() => setMenuOpen(false)}
-                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
-              >
-                How It Works
               </a>
               <a
                 href="/changelog"
