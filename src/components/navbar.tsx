@@ -24,10 +24,10 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#features"
+            href="/"
             className="text-sm text-text-muted hover:text-text transition-colors duration-200"
           >
-            Features
+            Home
           </a>
           <a
             href="/changelog"
@@ -80,11 +80,11 @@ export function Navbar() {
           >
             <div className="flex flex-col px-6 py-4 gap-4">
               <a
-                href="#features"
+                href="/"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
-                Features
+                Home
               </a>
               <a
                 href="/changelog"
