@@ -29,16 +29,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="inline-flex items-center gap-3 mb-8 px-4 py-1.5 rounded-full border border-border-light"
+          className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 rounded-full border border-border-light"
           style={{ background: "rgba(129, 140, 248, 0.06)" }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
           <span className="text-xs font-medium text-text-muted tracking-wide">
-            Free &amp; open source
-          </span>
-          <span className="w-px h-3 bg-border-light" />
-          <span className="text-xs font-medium text-text-muted tracking-wide">
-            100% local — your music never leaves your machine
+            A creative development tool for producers
           </span>
         </motion.div>
 
