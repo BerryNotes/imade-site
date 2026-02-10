@@ -29,7 +29,7 @@ export function Footer() {
           >
             Releases
           </a>
-          <span className="text-xs text-text-dim">v2.3.1</span>
+          <span className="text-xs text-text-dim">v2.3.2</span>
         </div>
       </div>
     </footer>
