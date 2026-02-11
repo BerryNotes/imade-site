@@ -14,6 +14,20 @@ export function Footer() {
 
         <div className="flex items-center gap-5">
           <a
+            href="https://www.youtube.com/@Berrynote"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-text-dim hover:text-text-muted transition-colors"
+          >
+            YouTube
+          </a>
+          <a
+            href="mailto:berrynote994@gmail.com"
+            className="text-xs text-text-dim hover:text-text-muted transition-colors"
+          >
+            berrynote994@gmail.com
+          </a>
+          <a
             href="https://github.com/BerryNotes/imade-releases/releases/latest"
             target="_blank"
             rel="noopener noreferrer"
