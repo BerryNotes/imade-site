@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: "iMade offers flexible pricing plans to suit every producer. Check our pricing page for current plans and features included at each tier.",
+    a: "iMade has a free trial so you can try it out with up to 25 songs. After that, it's $2.99/month or $19.99/year for full unlimited access. All plans run 100% offline — your music never leaves your computer.",
   },
   {
     q: "What platforms does it support?",

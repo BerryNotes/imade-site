@@ -11,50 +11,48 @@ export const metadata: Metadata = {
 
 const PLANS = [
   {
-    name: "Starter",
-    price: "$9",
-    period: "/month",
-    description: "For producers just getting started with ranking their catalog.",
+    name: "Free Trial",
+    price: "Free",
+    period: "",
+    description: "Try iMade with no commitment. See if it fits your workflow.",
     features: [
-      "Up to 100 songs",
+      "Up to 25 songs",
       "Classic & Quick comparison modes",
       "Elo rankings",
       "Local audio playback",
-      "Export rankings as CSV",
+      "No account required",
     ],
-    cta: "Get Started",
+    cta: "Download Free",
     highlighted: false,
   },
   {
-    name: "Pro",
-    price: "$19",
+    name: "Monthly",
+    price: "$2.99",
     period: "/month",
-    description: "For serious producers who want the full toolkit.",
+    description: "Full access to everything. Cancel anytime.",
     features: [
       "Unlimited songs",
       "All comparison modes (Classic, Quick, Tier, Bracket)",
       "Audio Visualizer with 8 modes",
-      "Advanced stats & session history",
+      "Advanced stats & growth tracking",
       "Playlist generation from rankings",
-      "Priority updates",
+      "CSV & M3U export",
     ],
-    cta: "Go Pro",
-    highlighted: true,
+    cta: "Start Monthly",
+    highlighted: false,
   },
   {
-    name: "Lifetime",
-    price: "$149",
-    period: "one-time",
-    description: "Pay once, own it forever. Every future update included.",
+    name: "Yearly",
+    price: "$19.99",
+    period: "/year",
+    description: "Best value — save 44% compared to monthly.",
     features: [
-      "Everything in Pro",
-      "Lifetime access to all updates",
-      "No recurring payments",
-      "Early access to new features",
+      "Everything in Monthly",
+      "Priority access to new features",
       "Support development directly",
     ],
-    cta: "Buy Lifetime",
-    highlighted: false,
+    cta: "Start Yearly",
+    highlighted: true,
   },
 ];
 
@@ -88,7 +86,7 @@ export default function PricingPage() {
                 >
                   {plan.highlighted && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-accent bg-accent/10 border border-accent/20 px-3 py-1 rounded-full">
-                      Most Popular
+                      Best Value
                     </span>
                   )}
 
