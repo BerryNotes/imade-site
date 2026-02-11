@@ -30,8 +30,8 @@ const screenshots = [
   },
   {
     label: "Visualizer",
-    subtitle: "8 modes of audio visualization",
-    desc: "Bars, radial, waveform, particles, orbit, sphere, grid, and laser — all reacting to your music in real time.",
+    subtitle: "10 modes of audio visualization",
+    desc: "Bars, radial, wave, EQ, spectrograph, particles, orbit, sphere, grid, and laser — all reacting to your music in real time.",
     file: "screenshot-visualizer.png",
   },
 ];

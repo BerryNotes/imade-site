@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { DownloadButton } from "./download-button";
 
 export function Hero() {
   return (
@@ -55,34 +56,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center justify-center gap-4"
         >
+          <DownloadButton />
           <a
-            href="/pricing"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-            style={{
-              background: "linear-gradient(135deg, #4338ca, #6366f1)",
-              boxShadow: "0 0 32px rgba(99, 102, 241, 0.2)",
-            }}
-          >
-            Try Free
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              className="opacity-70"
-              aria-hidden="true"
-            >
-              <path
-                d="M3.5 8h9M8.5 4l4 4-4 4"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
-          <a
-            href="/how-it-works"
+            href="#how-it-works"
             className="px-7 py-3.5 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"
           >
             How it works

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { DownloadButton } from "./download-button";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,17 +31,12 @@ export function Navbar() {
             Home
           </a>
           <a
-            href="/how-it-works"
+            href="#how-it-works"
             className="text-sm text-text-muted hover:text-text transition-colors duration-200"
           >
             How It Works
           </a>
-          <a
-            href="/pricing"
-            className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200"
-          >
-            Pricing
-          </a>
+          <DownloadButton compact />
         </div>
 
         {/* Mobile hamburger */}
@@ -87,19 +83,15 @@ export function Navbar() {
                 Home
               </a>
               <a
-                href="/how-it-works"
+                href="#how-it-works"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 How It Works
               </a>
-              <a
-                href="/pricing"
-                onClick={() => setMenuOpen(false)}
-                className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200 text-center"
-              >
-                Pricing
-              </a>
+              <div onClick={() => setMenuOpen(false)}>
+                <DownloadButton compact />
+              </div>
             </div>
           </motion.div>
         )}

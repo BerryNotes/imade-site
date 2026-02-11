@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   ),
   title: "iMade — Know Your Strongest Work",
   description:
-    "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
+    "Free music ranking tool for producers. Track your growth, find your strongest beats, and make intentional decisions about your music.",
   openGraph: {
     title: "iMade — Know Your Strongest Work",
     description:
-      "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
+      "Free music ranking tool for producers. Track your growth, find your strongest beats, and make intentional decisions about your music.",
     type: "website",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "iMade — Know Your Strongest Work",
     description:
-      "The creative development tool for music producers. Track your growth, find your strengths, and make intentional decisions about your music.",
+      "Free music ranking tool for producers. Track your growth, find your strongest beats, and make intentional decisions about your music.",
     images: ["/og-image.png"],
   },
 };

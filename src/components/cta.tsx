@@ -1,6 +1,7 @@
 "use client";
 
 import { Reveal } from "./reveal";
+import { DownloadButton } from "./download-button";
 
 export function CTA() {
   return (
@@ -26,46 +27,13 @@ export function CTA() {
 
         <Reveal delay={0.1}>
           <p className="text-text-muted mb-10 max-w-md mx-auto leading-relaxed">
-            iMade runs entirely on your machine.
+            100% free. Runs entirely on your machine.
             Your unreleased music never leaves your computer.
           </p>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="flex items-center justify-center gap-4">
-            <a
-              href="/pricing"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-display font-medium text-sm text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-              style={{
-                background: "linear-gradient(135deg, #4338ca, #6366f1)",
-                boxShadow: "0 0 40px rgba(99, 102, 241, 0.2)",
-              }}
-            >
-              Try Free
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                className="opacity-70"
-                aria-hidden="true"
-              >
-                <path
-                  d="M3.5 8h9M8.5 4l4 4-4 4"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-            <a
-              href="/how-it-works"
-              className="px-7 py-3.5 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"
-            >
-              How it works
-            </a>
-          </div>
+          <DownloadButton />
         </Reveal>
       </div>
     </section>
