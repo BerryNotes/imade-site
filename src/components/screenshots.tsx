@@ -14,8 +14,8 @@ type Screenshot = {
 const screenshots: Screenshot[] = [
   {
     label: "Catalog",
-    subtitle: "Your beats, organized",
-    desc: "Drop your files in and iMade builds a structured catalog. Filter by genre, bulk tag, and search across hundreds of songs instantly.",
+    subtitle: "From chaos to catalog",
+    desc: "Turn a messy folder of hundreds of audio files into a structured, searchable library. Filter by genre, bulk tag, and find any song instantly.",
     file: "screenshot-library.png",
     beforeFile: "screenshot-folder.png",
   },
@@ -70,7 +70,7 @@ export function Screenshots() {
               >
                 {/* Screenshot(s) */}
                 {s.beforeFile ? (
-                  <div className="w-full md:w-3/5 flex flex-row gap-3">
+                  <div className="w-full md:w-3/5 flex flex-row items-center gap-2">
                     <div className="flex-1 group relative rounded-xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
                       <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium tracking-wide uppercase bg-red-500/20 text-red-400 border border-red-500/20 backdrop-blur-sm">
                         Before
@@ -83,6 +83,9 @@ export function Screenshots() {
                         className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="shrink-0 text-accent opacity-60" aria-hidden="true">
+                      <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                     <div className="flex-1 group relative rounded-xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
                       <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium tracking-wide uppercase bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm">
                         After
