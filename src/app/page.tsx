@@ -3,7 +3,6 @@ import { Hero } from "@/components/hero";
 import { Screenshots } from "@/components/screenshots";
 import { Features } from "@/components/features";
 import { HowItWorks } from "@/components/how-it-works";
-import { FAQ } from "@/components/faq";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
           <Screenshots />
           <Features />
           <HowItWorks />
-          <FAQ />
           <CTA />
         </main>
         <Footer />

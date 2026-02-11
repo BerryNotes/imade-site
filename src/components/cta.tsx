@@ -41,7 +41,7 @@ export function CTA() {
                 boxShadow: "0 0 40px rgba(99, 102, 241, 0.2)",
               }}
             >
-              View Pricing
+              Try Free
               <svg
                 width="16"
                 height="16"
@@ -60,7 +60,7 @@ export function CTA() {
               </svg>
             </a>
             <a
-              href="#how-it-works"
+              href="/how-it-works"
               className="px-7 py-3.5 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"
             >
               How it works

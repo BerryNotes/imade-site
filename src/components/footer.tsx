@@ -14,6 +14,12 @@ export function Footer() {
 
         <div className="flex items-center gap-5">
           <a
+            href="/how-it-works"
+            className="text-xs text-text-dim hover:text-text-muted transition-colors"
+          >
+            How It Works
+          </a>
+          <a
             href="/pricing"
             className="text-xs text-text-dim hover:text-text-muted transition-colors"
           >

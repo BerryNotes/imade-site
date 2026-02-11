@@ -30,6 +30,12 @@ export function Navbar() {
             Home
           </a>
           <a
+            href="/how-it-works"
+            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+          >
+            How It Works
+          </a>
+          <a
             href="/pricing"
             className="text-sm font-medium text-bg bg-accent hover:bg-accent-deep px-4 py-2 rounded-lg transition-colors duration-200"
           >
@@ -79,6 +85,13 @@ export function Navbar() {
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 Home
+              </a>
+              <a
+                href="/how-it-works"
+                onClick={() => setMenuOpen(false)}
+                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+              >
+                How It Works
               </a>
               <a
                 href="/pricing"

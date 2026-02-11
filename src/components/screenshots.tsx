@@ -7,20 +7,38 @@ const screenshots = [
   {
     label: "Rankings",
     subtitle: "Know where every song stands",
-    desc: "Your entire catalog, objectively ranked by Elo rating. See scores, win/loss records, and genre breakdowns at a glance. Drag to reorder when you disagree — the system learns from you.",
+    desc: "Your entire catalog, objectively ranked by Elo rating. See scores, win/loss records, and genre breakdowns at a glance.",
     file: "screenshot-rankings.png",
   },
   {
-    label: "Battle",
+    label: "Compare",
     subtitle: "Replace gut feeling with real decisions",
-    desc: "Pick between two songs at a time. Guided sessions mix classic head-to-head comparisons with bracket tournaments so every matchup is meaningful and fair.",
+    desc: "Pick between two songs at a time. Guided sessions mix classic head-to-head comparisons with bracket tournaments so every matchup counts.",
     file: "screenshot-battle.png",
   },
   {
     label: "Stats",
     subtitle: "See your trajectory over time",
-    desc: "Every dot is a song, plotted by creation date and Elo rating. Spot trends across genres, identify your strengths, and track whether your music is actually improving.",
+    desc: "Every dot is a song, plotted by creation date and Elo rating. Spot trends across genres and track whether your music is actually improving.",
     file: "screenshot-stats.png",
+  },
+  {
+    label: "Library",
+    subtitle: "Your catalog, organized",
+    desc: "Browse, filter by genre, and manage your entire library. Bulk tagging, sorting, and instant search across hundreds of songs.",
+    file: "screenshot-library.png",
+  },
+  {
+    label: "Visualizer",
+    subtitle: "8 modes of audio visualization",
+    desc: "Bars, radial, waveform, particles, orbit, sphere, grid, and laser — all reacting to your music in real time.",
+    file: "screenshot-visualizer.png",
+  },
+  {
+    label: "Playlists",
+    subtitle: "Build from your rankings",
+    desc: "Generate playlists from your top-ranked songs or create custom ones. Export as M3U for any player.",
+    file: "screenshot-playlists.png",
   },
 ];
 
