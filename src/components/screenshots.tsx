@@ -3,12 +3,21 @@
 import { Reveal } from "./reveal";
 import Image from "next/image";
 
-const screenshots = [
+type Screenshot = {
+  label: string;
+  subtitle: string;
+  desc: string;
+  file: string;
+  beforeFile?: string;
+};
+
+const screenshots: Screenshot[] = [
   {
     label: "Catalog",
     subtitle: "Your beats, organized",
     desc: "Drop your files in and iMade builds a structured catalog. Filter by genre, bulk tag, and search across hundreds of songs instantly.",
     file: "screenshot-library.png",
+    beforeFile: "screenshot-folder.png",
   },
   {
     label: "Compare",
@@ -59,16 +68,45 @@ export function Screenshots() {
                   i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 } items-center gap-12 md:gap-16`}
               >
-                {/* Screenshot */}
-                <div className="w-full md:w-3/5 group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
-                  <Image
-                    src={`/screenshots/${s.file}`}
-                    alt={`${s.label} screenshot`}
-                    width={1280}
-                    height={800}
-                    className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
-                  />
-                </div>
+                {/* Screenshot(s) */}
+                {s.beforeFile ? (
+                  <div className="w-full md:w-3/5 flex flex-col gap-3">
+                    <div className="group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
+                      <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-medium tracking-wide uppercase bg-red-500/20 text-red-400 border border-red-500/20 backdrop-blur-sm">
+                        Before
+                      </div>
+                      <Image
+                        src={`/screenshots/${s.beforeFile}`}
+                        alt={`${s.label} before`}
+                        width={1280}
+                        height={800}
+                        className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
+                      <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-medium tracking-wide uppercase bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm">
+                        After
+                      </div>
+                      <Image
+                        src={`/screenshots/${s.file}`}
+                        alt={`${s.label} after`}
+                        width={1280}
+                        height={800}
+                        className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="w-full md:w-3/5 group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
+                    <Image
+                      src={`/screenshots/${s.file}`}
+                      alt={`${s.label} screenshot`}
+                      width={1280}
+                      height={800}
+                      className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                )}
 
                 {/* Description */}
                 <div className="w-full md:w-2/5">
