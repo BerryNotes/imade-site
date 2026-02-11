@@ -70,28 +70,28 @@ export function Screenshots() {
               >
                 {/* Screenshot(s) */}
                 {s.beforeFile ? (
-                  <div className="w-full md:w-3/5 flex flex-col gap-3">
-                    <div className="group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
-                      <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-medium tracking-wide uppercase bg-red-500/20 text-red-400 border border-red-500/20 backdrop-blur-sm">
+                  <div className="w-full md:w-3/5 flex flex-row gap-3">
+                    <div className="flex-1 group relative rounded-xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
+                      <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium tracking-wide uppercase bg-red-500/20 text-red-400 border border-red-500/20 backdrop-blur-sm">
                         Before
                       </div>
                       <Image
                         src={`/screenshots/${s.beforeFile}`}
                         alt={`${s.label} before`}
-                        width={1280}
-                        height={800}
+                        width={640}
+                        height={400}
                         className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
-                    <div className="group relative rounded-2xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
-                      <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md text-[11px] font-medium tracking-wide uppercase bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm">
+                    <div className="flex-1 group relative rounded-xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
+                      <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium tracking-wide uppercase bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm">
                         After
                       </div>
                       <Image
                         src={`/screenshots/${s.file}`}
                         alt={`${s.label} after`}
-                        width={1280}
-                        height={800}
+                        width={640}
+                        height={400}
                         className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
