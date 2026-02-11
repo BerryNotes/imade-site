@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const screenshots = [
   {
-    label: "Rankings",
-    subtitle: "Know where every song stands",
-    desc: "Your entire catalog, objectively ranked by Elo rating. See scores, win/loss records, and genre breakdowns at a glance.",
-    file: "screenshot-rankings.png",
+    label: "Catalog",
+    subtitle: "Your beats, organized",
+    desc: "Drop your files in and iMade builds a structured catalog. Filter by genre, bulk tag, and search across hundreds of songs instantly.",
+    file: "screenshot-library.png",
   },
   {
     label: "Compare",
     subtitle: "Replace gut feeling with real decisions",
-    desc: "Pick between two songs at a time. Guided sessions mix classic head-to-head comparisons with bracket tournaments so every matchup counts.",
+    desc: "Two songs, one choice. Guided sessions and bracket tournaments structure the process so every comparison counts.",
     file: "screenshot-battle.png",
   },
   {
@@ -23,22 +23,16 @@ const screenshots = [
     file: "screenshot-stats.png",
   },
   {
-    label: "Library",
-    subtitle: "Your catalog, organized",
-    desc: "Browse, filter by genre, and manage your entire library. Bulk tagging, sorting, and instant search across hundreds of songs.",
-    file: "screenshot-library.png",
+    label: "Analytics",
+    subtitle: "Know your strengths",
+    desc: "Genre breakdowns, session history, and win/loss records reveal which styles you dominate and where to double down.",
+    file: "screenshot-analytics.png",
   },
   {
     label: "Visualizer",
     subtitle: "8 modes of audio visualization",
     desc: "Bars, radial, waveform, particles, orbit, sphere, grid, and laser — all reacting to your music in real time.",
     file: "screenshot-visualizer.png",
-  },
-  {
-    label: "Playlists",
-    subtitle: "Build from your rankings",
-    desc: "Generate playlists from your top-ranked songs or create custom ones. Export as M3U for any player.",
-    file: "screenshot-playlists.png",
   },
 ];
 
