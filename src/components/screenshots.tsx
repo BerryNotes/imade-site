@@ -70,7 +70,7 @@ export function Screenshots() {
               >
                 {/* Screenshot(s) */}
                 {s.beforeFile ? (
-                  <div className="w-full md:w-3/5 flex flex-row items-center gap-2">
+                  <div className="w-full md:w-4/5 flex flex-row items-center gap-2">
                     <div className="flex-1 group relative rounded-xl border border-border overflow-hidden bg-bg-card transition-colors duration-300 hover:border-border-light">
                       <div className="absolute top-2 left-2 z-10 px-2 py-0.5 rounded text-[10px] font-medium tracking-wide uppercase bg-red-500/20 text-red-400 border border-red-500/20 backdrop-blur-sm">
                         Before
