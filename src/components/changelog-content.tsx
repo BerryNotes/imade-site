@@ -15,9 +15,33 @@ interface Release {
 
 const releases: Release[] = [
   {
-    version: "2.6.0",
+    version: "2.6.1",
     date: "February 13, 2026",
     latest: true,
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
+            "Spectrograph: logarithmic frequency scale (20 Hz \u2013 10 kHz) with labeled axis",
+            "Admin API with token-based authentication for remote management",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Spectrograph FFT resolution increased (8192-point) for precise low-frequency display",
+            "CORS support for cross-origin admin dashboard access",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    version: "2.6.0",
+    date: "February 13, 2026",
     sections: [
       {
         label: "New",

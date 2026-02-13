@@ -39,7 +39,7 @@ export function Footer() {
             href="/changelog"
             className="text-xs text-text-dim hover:text-text-muted transition-colors"
           >
-            v2.6.0
+            v2.6.1
           </a>
         </div>
       </div>
