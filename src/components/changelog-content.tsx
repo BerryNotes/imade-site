@@ -23,6 +23,45 @@ const releases: Release[] = [
         label: "New",
         entries: {
           items: [
+            "Visualizer: Wave 3D history plane FX (press Shift) \u2014 scrolling waveform history with slow rotation",
+            "Visualizer: Orbit multi-ring FX \u2014 3 perpendicular rings (XY/XZ/YZ planes) with rainbow colors",
+            "Visualizer: Sphere cube wireframe FX \u2014 12 edges + face diagonals with frequency-reactive distortion",
+            "Visualizer: Grid rainbow shockwave FX \u2014 bass-driven concentric pulse rings with diagonal mesh",
+            "Visualizer: Spectrograph palette swap FX \u2014 purple default, ocean blue-cyan-yellow-white on Shift",
+            "Visualizer: Particles volume-reactive sizing \u2014 dots grow with higher volume",
+            "Visualizer: Laser volume-sensitive copy spacing",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Particles redesigned: free-roaming across canvas with constant speed and edge wrapping",
+            "Grid default simplified to dots only (no lines)",
+            "Wave FX uses decoupled history buffer for smoother depth without lag",
+            "Perspective projection clamped to prevent behind-camera glitching",
+          ],
+        },
+      },
+      {
+        label: "Fixed",
+        entries: {
+          items: [
+            "Bulletproof local auth: session always forced on every request, preventing data loss on server restart",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    version: "2.5.0",
+    date: "February 12, 2026",
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
             "Visualizer: freeze frame on pause \u2014 visualization holds last frame instead of fading out",
             "Visualizer: Radial 3D sphere FX (press Shift in Radial mode) \u2014 spinning sphere with frequency bars",
             "Visualizer: EQ color shift FX (press Shift in EQ mode) \u2014 hue cycles with the music",
