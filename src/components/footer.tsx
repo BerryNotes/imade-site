@@ -35,7 +35,12 @@ export function Footer() {
           >
             GitHub Releases
           </a>
-          <span className="text-xs text-text-dim">v2.4.0</span>
+          <a
+            href="/changelog"
+            className="text-xs text-text-dim hover:text-text-muted transition-colors"
+          >
+            v2.6.0
+          </a>
         </div>
       </div>
     </footer>

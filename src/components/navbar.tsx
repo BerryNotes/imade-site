@@ -36,6 +36,12 @@ export function Navbar() {
           >
             How It Works
           </a>
+          <a
+            href="/changelog"
+            className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+          >
+            Changelog
+          </a>
           <DownloadButton compact />
         </div>
 
@@ -88,6 +94,13 @@ export function Navbar() {
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 How It Works
+              </a>
+              <a
+                href="/changelog"
+                onClick={() => setMenuOpen(false)}
+                className="text-sm text-text-muted hover:text-text transition-colors duration-200"
+              >
+                Changelog
               </a>
               <div onClick={() => setMenuOpen(false)}>
                 <DownloadButton compact />
