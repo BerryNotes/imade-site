@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://imade-site.vercel.app",
+      url: "https://imade.one",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
