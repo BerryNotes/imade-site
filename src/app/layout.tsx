@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { BackgroundEffects } from "@/components/background-effects";
 
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <BackgroundEffects />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
