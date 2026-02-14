@@ -15,9 +15,50 @@ interface Release {
 
 const releases: Release[] = [
   {
-    version: "2.6.2",
+    version: "2.7.0",
     date: "February 14, 2026",
     latest: true,
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
+            "Admin dashboard: activity log tracking logins, logouts, uploads, registrations, and deletions",
+            "Admin dashboard: user search bar for filtering users",
+            "Admin activity: expandable grouped rows for batch uploads and deletes",
+            "Growth tab: hover tooltips on monthly calendar showing song count, avg Elo, and top songs",
+            "Upload tab: \"Start Ranking\" button guides new users to Compare after first upload",
+            "Account settings: shows plan type (Trial/Full) and app version",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Stats tab: listening stats accessible without any comparisons",
+            "Session progress bar: two-phase calculation prevents backwards jumps after tier sort",
+            "Sessions always available: re-comparisons offered when all unique pairs are exhausted",
+            "Lazy-loaded tabs auto-reload on stale cache instead of crashing",
+            "Cache-Control headers on index.html prevent stale chunk issues after rebuilds",
+          ],
+        },
+      },
+      {
+        label: "Fixed",
+        entries: {
+          items: [
+            "Tier sort no longer exhausts all pairs with small libraries (7 songs)",
+            "Starting a new session no longer glitches/flashes when all songs are ranked",
+            "Stats tab no longer crashes with listening data and zero comparisons",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    version: "2.6.2",
+    date: "February 14, 2026",
     sections: [
       {
         label: "New",
