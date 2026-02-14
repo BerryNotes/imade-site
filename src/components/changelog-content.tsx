@@ -15,9 +15,46 @@ interface Release {
 
 const releases: Release[] = [
   {
+    version: "2.6.2",
+    date: "February 14, 2026",
+    latest: true,
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
+            "Admin dashboard with user management, role toggle, and song counts",
+            "Multi-user authentication with bcrypt passwords, session management, and rate limiting",
+            "Genre change via three-dot menu popup on each song row",
+            "Username displayed next to profile avatar in header",
+            "Favicon on app and admin pages",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Visualizer performance: removed shadow effects and gradients, 30fps frame limiter",
+            "Spectrograph preserves history on resize and fullscreen toggle",
+            "Case-insensitive username login",
+          ],
+        },
+      },
+      {
+        label: "Fixed",
+        entries: {
+          items: [
+            "Visualizer crash: switched from createMediaElementSource to captureStream for reliable audio analysis",
+            "Visualizer continues working after skipping songs",
+          ],
+        },
+      },
+    ],
+  },
+  {
     version: "2.6.1",
     date: "February 13, 2026",
-    latest: true,
     sections: [
       {
         label: "New",

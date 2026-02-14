@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DownloadButton } from "./download-button";
-
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -56,7 +54,6 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center justify-center gap-4"
         >
-          <DownloadButton />
           <a
             href="#how-it-works"
             className="px-7 py-3.5 rounded-xl font-display font-medium text-sm text-text-muted border border-border hover:border-border-light hover:text-text transition-all duration-200"

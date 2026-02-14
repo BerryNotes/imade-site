@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { DownloadButton } from "./download-button";
-
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,7 +34,6 @@ export function Navbar() {
           >
             Changelog
           </a>
-          <DownloadButton compact />
         </div>
 
         {/* Mobile hamburger */}
@@ -89,9 +86,6 @@ export function Navbar() {
               >
                 Changelog
               </a>
-              <div onClick={() => setMenuOpen(false)}>
-                <DownloadButton compact />
-              </div>
             </div>
           </motion.div>
         )}

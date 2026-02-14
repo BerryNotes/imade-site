@@ -28,14 +28,6 @@ export function Footer() {
             berrynote994@gmail.com
           </a>
           <a
-            href="https://github.com/BerryNotes/imade-releases/releases/latest"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-text-dim hover:text-text-muted transition-colors"
-          >
-            GitHub Releases
-          </a>
-          <a
             href="/changelog"
             className="text-xs text-text-dim hover:text-text-muted transition-colors"
           >

@@ -1,8 +1,6 @@
 "use client";
 
 import { Reveal } from "./reveal";
-import { DownloadButton } from "./download-button";
-
 export function CTA() {
   return (
     <section id="cta" className="py-32 px-6 relative">
@@ -32,9 +30,6 @@ export function CTA() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.2}>
-          <DownloadButton />
-        </Reveal>
       </div>
     </section>
   );
