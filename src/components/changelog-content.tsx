@@ -23,9 +23,6 @@ const releases: Release[] = [
         label: "New",
         entries: {
           items: [
-            "Admin dashboard: activity log tracking logins, logouts, uploads, registrations, and deletions",
-            "Admin dashboard: user search bar for filtering users",
-            "Admin activity: expandable grouped rows for batch uploads and deletes",
             "Growth tab: hover tooltips on monthly calendar showing song count, avg Elo, and top songs",
             "Upload tab: \"Start Ranking\" button guides new users to Compare after first upload",
             "Account settings: shows plan type (Trial/Full) and app version",
