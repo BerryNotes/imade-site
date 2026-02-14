@@ -23,11 +23,10 @@ const releases: Release[] = [
         label: "New",
         entries: {
           items: [
-            "Admin dashboard with user management, role toggle, and song counts",
             "Multi-user authentication with bcrypt passwords, session management, and rate limiting",
             "Genre change via three-dot menu popup on each song row",
             "Username displayed next to profile avatar in header",
-            "Favicon on app and admin pages",
+            "Favicon on app pages",
           ],
         },
       },
@@ -61,7 +60,6 @@ const releases: Release[] = [
         entries: {
           items: [
             "Spectrograph: logarithmic frequency scale (20 Hz \u2013 10 kHz) with labeled axis",
-            "Admin API with token-based authentication for remote management",
           ],
         },
       },
@@ -70,7 +68,6 @@ const releases: Release[] = [
         entries: {
           items: [
             "Spectrograph FFT resolution increased (8192-point) for precise low-frequency display",
-            "CORS support for cross-origin admin dashboard access",
           ],
         },
       },
