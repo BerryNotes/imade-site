@@ -53,7 +53,7 @@ export function DownloadButton({ compact = false }: { compact?: boolean }) {
         }
       >
         <DownloadIcon />
-        Download Free
+        Download
       </a>
     );
   }

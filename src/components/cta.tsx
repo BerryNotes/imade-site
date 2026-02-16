@@ -25,8 +25,8 @@ export function CTA() {
 
         <Reveal delay={0.1}>
           <p className="text-text-muted mb-10 max-w-md mx-auto leading-relaxed">
-            100% free. Runs entirely on your machine.
-            Your unreleased music never leaves your computer.
+            Structure your own judgement. Track your progress.
+            Know exactly where you stand.
           </p>
         </Reveal>
 

@@ -58,12 +58,14 @@ const features = [
     ),
   },
   {
-    title: "Completely offline",
-    desc: "No accounts, no cloud, no tracking. Everything runs locally. Your unreleased music stays private.",
+    title: "Audio visualizer",
+    desc: "8 visual modes with reactive effects. Watch your music come alive while you listen and compare.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        <rect x="1" y="6" width="4" height="12" rx="1" />
+        <rect x="7" y="3" width="4" height="18" rx="1" />
+        <rect x="13" y="8" width="4" height="8" rx="1" />
+        <rect x="19" y="5" width="4" height="14" rx="1" />
       </svg>
     ),
   },

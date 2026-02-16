@@ -42,9 +42,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg text-text-muted max-w-lg mx-auto mb-10 leading-relaxed"
         >
-          Stop guessing which beats hit hardest. iMade replaces gut feeling with
-          a structured comparison system that reveals your real strengths and
-          tracks how you&apos;re improving over time.
+          Stop guessing which beats hit hardest. Compare your songs head-to-head
+          and let your own judgement, applied consistently over time, reveal your
+          real strengths and growth.
         </motion.p>
 
         {/* CTA */}
