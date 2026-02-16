@@ -87,9 +87,9 @@ export function Features() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
             <Reveal key={f.title} delay={i * 0.08} variant="fadeUp">
-              <div className="group p-6 rounded-2xl border border-border hover:border-border-light transition-colors duration-300">
+              <div className="group p-6 rounded-2xl border border-border-light bg-bg-card hover:bg-bg-card-hover hover:border-accent/30 transition-colors duration-300">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-text-muted group-hover:text-accent transition-colors duration-300"
-                  style={{ background: "rgba(129, 140, 248, 0.08)" }}
+                  style={{ background: "rgba(129, 140, 248, 0.12)" }}
                 >
                   {f.icon}
                 </div>

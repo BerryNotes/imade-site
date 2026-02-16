@@ -34,6 +34,12 @@ export function Navbar() {
           >
             Changelog
           </a>
+          <a
+            href="https://app.imade.one"
+            className="text-sm font-semibold text-white bg-accent hover:bg-accent/80 px-4 py-2 rounded-lg transition-colors duration-200"
+          >
+            Log In
+          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -85,6 +91,13 @@ export function Navbar() {
                 className="text-sm text-text-muted hover:text-text transition-colors duration-200"
               >
                 Changelog
+              </a>
+              <a
+                href="https://app.imade.one"
+                onClick={() => setMenuOpen(false)}
+                className="text-sm font-semibold text-white bg-accent hover:bg-accent/80 px-4 py-2 rounded-lg transition-colors duration-200 text-center"
+              >
+                Log In
               </a>
             </div>
           </motion.div>

@@ -15,9 +15,61 @@ interface Release {
 
 const releases: Release[] = [
   {
+    version: "2.8.1",
+    date: "February 16, 2026",
+    latest: true,
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
+            "Listen time Elo adjustment: songs you listen to more get a subtle ranking boost",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Stats: summary cards moved to Breakdown tab only",
+            "Stats: month boxes in Timeline are less bright with stronger outlines",
+            "Library: queue actions play immediately when nothing is playing",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    version: "2.8.0",
+    date: "February 15, 2026",
+    sections: [
+      {
+        label: "New",
+        entries: {
+          items: [
+            "Email verification: new accounts must verify their email before logging in",
+            "Password reset via email with secure token links (1-hour expiry)",
+            "Resend verification email option on login screen",
+            "Password changes now require email reset flow",
+            "Security headers: X-Frame-Options, X-Content-Type-Options, HSTS, XSS protection",
+          ],
+        },
+      },
+      {
+        label: "Improved",
+        entries: {
+          items: [
+            "Profile settings: email displayed as read-only, username still editable",
+            "Activity log tracks username changes, password resets, and email verifications",
+            "Email features optional — Electron/local mode works without Resend API key",
+          ],
+        },
+      },
+    ],
+  },
+  {
     version: "2.7.0",
     date: "February 14, 2026",
-    latest: true,
     sections: [
       {
         label: "New",
