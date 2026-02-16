@@ -59,7 +59,7 @@ const features = [
   },
   {
     title: "Audio visualizer",
-    desc: "8 visual modes with reactive effects. Watch your music come alive while you listen and compare.",
+    desc: "9 visual modes with reactive effects. Watch your music come alive while you listen and compare.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="1" y="6" width="4" height="12" rx="1" />
